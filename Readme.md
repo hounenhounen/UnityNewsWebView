@@ -1,5 +1,5 @@
 # 【Unity】アプリのお知らせ機能を作成しよう！
-![画像1](./readme-img/AutoLoginConcept.png)
+![画像1](./readme-img/WebviewConcept.png)
 
 ## 概要
 * [ニフティクラウドmobile backend](http://mb.cloud.nifty.com/)の『ファイルストア』の公開ファイル機能を利用してUnityアプリにお知らせ機能を追加するサンプルコードです。
@@ -17,7 +17,7 @@
 ![画像2](https://github.com/natsumo/SwiftLoginApp/blob/master/readme-img/002.png)
 
 ## 動作環境
-* Mac OS X 10.10.5(Yosemite)
+* Mac OS X 10.11.6EI Captain)
 * Unity ver. 5.4.2
 * MonoDevelop-Unity ver. 5.9.6
 * NCMB UnitySDK v2.2.0
@@ -75,7 +75,7 @@
 ### 6. 動作確認
 * Unity上で真ん中の実行ボタン（さんかくの再生マーク）をクリックもしくは、ビルドをすると下記のような画面が表示されます。
 
-![画像12](./readme-img/WebView.png)
+![画像12](./readme-img/Webview.png)
 
 
 ## 解説
