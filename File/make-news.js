@@ -5,17 +5,11 @@ var YOUR_CLIENT_KEY = "YOUR_CLIENT_KEY";
 var ncmb;
 
 
-    
+
 
 function DocumentReadyStateInteractiveFunc(e) {
     ncmb = new NCMB(YOUR_APP_KEY, YOUR_CLIENT_KEY);
-    news_element = document.getElementById('test');
-    var time = document.createElement('p');
-    var time_str = new Date();
-    time.textContent = time_str.toString();
-    news_element.appendChild(time);
-
-
+    news_element = document.getElementById('content');
     var newsClass = ncmb.DataStore("news");
     newsClass.fetchAll()
              .then(function (results) {
@@ -26,6 +20,7 @@ function DocumentReadyStateInteractiveFunc(e) {
                      if(result.get("endday") != null){
                         news.textContent = result.get("content");
                         endday = new Date(result.get("endday"));
+                        var time_str = new Date();
                         var diffday = parseInt(((endday - time_str)/86400000),10);
 
                         news.textContent = news.textContent + " あと" +diffday+"日";
